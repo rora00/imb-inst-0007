@@ -1,0 +1,14 @@
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    color: rgb(65, 167, 25);
+    background-color: #d8da3d;
+}
+li.list{
+    color:blue;
+}
+#par1{ /*refers to the element with ID par1 */
+    text-decoration: none;
+}
+a:visited{
+    color: purple; 
+} 

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Rohit Ravi</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body style="">
+		<!--formatting elements to be used: <hr>, <strong>, <em>, <br>, <code>, <q>, <abbr>, lists, favicon, table and all features, Form elements(?)-->
+		<div class="center">
+			<h1>Rohit Ravi</h1>
+			<h2>First year IMB Student at UCL</h2>
+		</div>
+
+		<img src="rohit.jpg" alt="rohit" class="center" width="200">
+		<p style="color:white; font-family:georgia" align="center">
+			<ul style="font-family:georgia" align="center" style="list-style-type:circle; color:blue;">
+  				<li>Indian student from <a href="https://en.wikipedia.org/wiki/Singapore">Singapore</a></li>
+  				<li>Favourite Sports: Taekwondo, Sailing</li>
+  				<li>Other hobbies: Teaching, coding, technology, gaming</li>
+			</ul>
+		</p>
+		<table border="" width="100%" cellspacing="10" cellpadding="10" border="100" bgcolor="">
+			<caption>Friends in INST0007</caption>
+			<thead>
+				<tr bgcolor="">
+					<th>Manas</th>
+					<th>Fadhil</th>
+					<th>Organization</th>
+				</tr>
+			</thead>
+			<tr>
+				<td>20 yr old</td>
+				<td>21 yr old</td>
+				<td rowspan="2">University College London</td>
+			</tr>
+			<tr>
+				<td><img src="manas.jpg" width="30%" alt="manas"/></td>
+				<td><img src="fadhil.jpg" width="100%" alt="manas"/></td> 
+			</tr>
+			<tr>
+				<td colspan="2">Country: Singapore</td>
+				<td></td>
+			</tr>
+		</table>
+		<br>
+		<form action="http://ucl.ac.uk" method="post"><!-post is used for security reasons-->
+			<caption>Please enter your details to register</caption><br>
+			Username: <label id="uname"><input type="text" name="username" id="uname"></label><br>
+			Password: <label id="pw"><input type ="password" name="password" id="pw"></label><br>
+			<fieldset>
+			  <legend>Personal Details:</legend>
+			  Name: <input type="text"><br>
+			  Email: <input type="text"><br>
+			  Date of birth: <input type="text">
+			</fieldset>
+			<label for="male">Male</label><input type="radio" name="gender" id="male"><br>
+			<label for="female">Female</label><input type="radio" name="gender" id="female"><br>
+			<caption>What is your favorite Term 1 Class?</caption><br>
+			<select>			
+			  <option value="Information Systems">Information Systems</option>
+			  <option value="Web Technologies">Web Technologies</option>
+			  <option value="Foundations of Management">Foundations of Management</option>
+			  <option value="Business Intelligence">Business Intelligence</option>
+			</select><br>
+			<caption>Do you like dogs or cats? or both?</caption><br>
+			  <input type="checkbox" name="animal" value="dogs">I like a dogs<br>
+			  <input type="checkbox" name="animal" value="cats" checked> I like a cats<br>
+			  <button type="button" onclick="alert('Thank you for filling out my form!')">Click if you dare</button>
+			  <input type="submit" value="Submit">		
+		<form>
+	</body>
+</html>

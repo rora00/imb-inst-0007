@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css"></link>
+        <script src="script.js" type="text/javascript"></script>
+        <title>Simple web page</title>
+        <!--Responsive web design-->
+        <meta charset="UTF-8" name="viewport" content="width=device-width, scale=1.0"/>
+        <!--Embedded/Internal CSS Gluing-->
+        <style>
+            table {
+                border-color: red;
+            }
+            #textfield{
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Web page with errors</h1>
+        <p id="par1">This page contains a few HTML errors.</p>
+        <p class="red-par">Refer to <a href="http://www.w3schools.com/html/">W3Schools</a> for finding more information on the use of HTML.</p>
+        <p>Here is an unordered list of topics we covered:</p>
+        <ul>
+            <li><em>HTML</em></li>
+            <li><strong>CSS</strong></li>
+            <li><ins>Javascript</ins></li>
+            <li><del>XML</del></li>
+        </ul>
+        <hr>
+        <table border="1.0" cellspacing="5" width="100%">
+            <tr>
+                <th align="left">Name</th>
+                <th align="left">Email</th>
+                <th align="left">Institution</th>
+            </tr>
+            <tr>
+                <td>Karen Stepanyan</td>
+                <td>k.stepanyan@ucl.ac.uk</td>
+                <td rowspan="3">UCL</td>
+            </tr>
+            <tr>
+                <td>Oliver Duke-Williams</td>
+                <td>o.duke-williams@ucl.ac.uk</td>
+            </tr>
+            <tr>
+                <td>Luke Dickens</td>
+                <td>l.dickens@ucl.ac.uk</td>
+            </tr>
+        </table>
+        <hr>
+        <!--Choose GET/POST form, POST hides URL-->
+        <form action="data.xml" method="POST">
+            <fieldset>
+                <input type="text" id="textfield" value="with an initial value"></input>
+                <label>Password:<input type="password" id="pw" value=""></input></label>
+                <label>Submit Button:<input type="submit" id="submit" value="submit"/></label>
+            </fieldset>
+        </form>
+    </body>
+</html>
